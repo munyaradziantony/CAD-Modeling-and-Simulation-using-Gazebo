@@ -1,0 +1,8 @@
+# Goal.srv
+# This service sets a pose for a robot and returns a success flag.
+
+# Request
+geometry_msgs/Pose pose  # The target pose to set
+---
+# Response
+bool success              # Indicates whether the pose was successfully set

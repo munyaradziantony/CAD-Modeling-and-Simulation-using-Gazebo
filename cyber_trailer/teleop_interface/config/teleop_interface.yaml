@@ -1,0 +1,10 @@
+teleop_interface:
+  ros__parameters:
+    # The rate at which the robot moves forward.
+    forward_rate: 1.0  # Speed for moving forward (units per second)
+    
+    # The rate at which the robot moves backward.
+    backward_rate: 0.5  # Speed for moving backward (units per second)
+    
+    # The rate at which the robot rotates.
+    rotation_rate: 1.0  # Rotation speed (radians per second)

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ "$1" == "--rebuild" ]]; then
+    echo "Building the Base Image..."
+    DOCKER_BUILDKIT=1 docker build -f Dockerfile -t ros2-galactic-enpm662 .
+fi
+
+xhost +local:docker
+
+echo "Starting the docker container..."
+docker-compose up
+

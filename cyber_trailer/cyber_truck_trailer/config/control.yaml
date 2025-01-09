@@ -1,0 +1,53 @@
+controller_manager:
+  ros__parameters:
+    # The update rate for the controller manager in Hertz (Hz)
+    update_rate: 10  # Hz
+
+    # Define the joint state broadcaster for publishing joint states
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # Define a joint trajectory controller for managing joint positions
+    joint_trajectory_position_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+# Parameters specific to the joint trajectory position controller
+joint_trajectory_position_controller:
+  ros__parameters:
+    # List of joints controlled by this controller
+    joints:
+      - chassis_rear_right_wheel_joint  # Example joint name
+
+    # Interfaces for sending commands to the joints
+    command_interfaces:
+      # Control the joints using velocity commands (uncomment position if needed)
+      # - position
+      - velocity
+
+    # Interfaces for reading the state of the joints
+    state_interfaces:
+      - position       # Position feedback
+      - velocity       # Velocity feedback
+
+    # Rate at which to publish state information
+    state_publish_rate: 200.0  # Hz (Defaults to 50 Hz)
+
+    # Rate at which to monitor action results
+    action_monitor_rate: 20.0   # Hz (Defaults to 20 Hz)
+
+    # Allow partial joint goals (e.g., only move some joints)
+    allow_partial_joints_goal: false  # Defaults to false
+
+    # Control settings for open-loop operation
+    open_loop_control: true  # Use open-loop control instead of closed-loop
+
+    # Allow integration in goal trajectories
+    allow_integration_in_goal_trajectories: true
+
+    # Constraints for the controller
+    constraints:
+      # Tolerance for stopping velocity
+      stopped_velocity_tolerance: 0.01  # Defaults to 0.01
+
+      # Time to wait before starting the goal (0.0 means start immediately)
+      goal_time: 0.0  # Defaults to 0.0

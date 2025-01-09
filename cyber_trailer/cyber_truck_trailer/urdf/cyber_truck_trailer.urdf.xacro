@@ -1,0 +1,737 @@
+<?xml version="1.0"?>
+<robot
+  name="cyber_truck_trailer" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link
+    name="trailer_base_link">
+    <inertial>
+      <origin
+        xyz="0.208999667507989 -7.09811038529518E-07 0.193825536292477"
+        rpy="0 0 0" />
+      <mass
+        value="71.153178542036" />
+      <inertia
+        ixx="16.9489177846989"
+        ixy="-0.000204627218083857"
+        ixz="-0.787115220796937"
+        iyy="31.6626249749761"
+        iyz="-0.000178248045006897"
+        izz="33.8596103928731" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.529411764705882 0.549019607843137 0.549019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="trailer_rrw_link">
+    <inertial>
+      <origin
+        xyz="3.83026943495679E-14 -1.91206432958546E-14 0.0153678361244729"
+        rpy="0 0 0" />
+      <mass
+        value="0.72439498421396" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="-1.28274262656265E-20"
+        ixz="1.01158453807695E-19"
+        iyy="0.00100050040398938"
+        iyz="-1.60071549886504E-20"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_rrw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_rrw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="trailer_rrw_joint"
+    type="continuous">
+    <origin
+      xyz="7.0283717805153E-05 -0.181945626461709 0.0021648066566907"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="trailer_base_link" />
+    <child
+      link="trailer_rrw_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="trailer_rlw_link">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 1.0796419257685E-17 -0.0153678361240795"
+        rpy="0 0 0" />
+      <mass
+        value="0.724394984213959" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="1.41395509431171E-19"
+        ixz="2.66450595702666E-18"
+        iyy="0.00100050040398938"
+        iyz="-6.73807415815898E-20"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_rlw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_rlw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="trailer_rlw_joint"
+    type="continuous">
+    <origin
+      xyz="7.02837178058191E-05 0.176946873708345 0.002164806656692"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="trailer_base_link" />
+    <child
+      link="trailer_rlw_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="trailer_frw_link">
+    <inertial>
+      <origin
+        xyz="5.21249710061511E-14 -1.22605549616972E-14 0.0153678361243607"
+        rpy="0 0 0" />
+      <mass
+        value="0.72439498421396" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="-1.78658006835026E-20"
+        ixz="7.02047940321961E-18"
+        iyy="0.00100050040398938"
+        iyz="-6.1944395331551E-21"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_frw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_frw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="trailer_frw_joint"
+    type="continuous">
+    <origin
+      xyz="0.400070283717805 -0.181945626461709 0.00216480665669068"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="trailer_base_link" />
+    <child
+      link="trailer_frw_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="trailer_flw_link">
+    <inertial>
+      <origin
+        xyz="6.51700915454967E-14 5.62102488320266E-15 -0.0153678361241893"
+        rpy="0 0 0" />
+      <mass
+        value="0.724394984213959" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="-2.72383397569604E-20"
+        ixz="-1.33279120106074E-19"
+        iyy="0.00100050040398938"
+        iyz="-1.50405633240437E-19"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_flw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/trailer_flw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="trailer_flw_joint"
+    type="continuous">
+    <origin
+      xyz="0.400070283717805 0.181946873708344 0.00216480665669199"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="trailer_base_link" />
+    <child
+      link="trailer_flw_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="chassis_link">
+    <inertial>
+      <origin
+        xyz="0.524399240494415 3.75691026274771E-07 0.0414353314715627"
+        rpy="0 0 0" />
+      <mass
+        value="66.7532065949751" />
+      <inertia
+        ixx="1.61272656728783"
+        ixy="-1.06255935223018E-05"
+        ixz="-0.048129997993702"
+        iyy="3.41150984453349"
+        iyz="2.28611408228852E-06"
+        izz="4.58585783102967" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_joint"
+    type="revolute">
+    <origin
+      xyz="0.64699 0 0.038602"
+      rpy="0 0 0" />
+    <parent
+      link="trailer_base_link" />
+    <child
+      link="chassis_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.2816"
+      upper="0.2816"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="-8.04504226575853E-05 7.67843247706512E-07 -0.00303642843235208"
+        rpy="0 0 0" />
+      <mass
+        value="0.00336653694664888" />
+      <inertia
+        ixx="1.14502784125943E-07"
+        ixy="-1.38986179022309E-11"
+        ixz="6.71285350922427E-10"
+        iyy="1.13038317422095E-07"
+        iyz="-6.43255474969505E-12"
+        izz="1.62599954732139E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_frame"
+    type="fixed">
+    <origin
+      xyz="0.563552732203734 0 0.189816673326022"
+      rpy="0 0 0" />
+    <parent
+      link="chassis_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="chassis_rrw_link">
+    <inertial>
+      <origin
+        xyz="6.08704622696804E-17 1.0942863984541E-17 0.0153678361240778"
+        rpy="0 0 0" />
+      <mass
+        value="0.72439498421396" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="5.58549374309073E-20"
+        ixz="1.2957074726475E-19"
+        iyy="0.00100050040398938"
+        iyz="5.49547400107754E-19"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_rrw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_rrw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_rrw_joint"
+    type="continuous">
+    <origin
+      xyz="0.211046138035326 -0.225462509212952 -0.0364369904716932"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="chassis_link" />
+    <child
+      link="chassis_rrw_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="chassis_rlw_link">
+    <inertial>
+      <origin
+        xyz="2.77752561127199E-16 3.27883774831003E-18 -0.0153678361240778"
+        rpy="0 0 0" />
+      <mass
+        value="0.724394984213959" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="1.21598063017249E-19"
+        ixz="1.95851231747906E-19"
+        iyy="0.00100050040398938"
+        iyz="4.53437782326283E-19"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_rlw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_rlw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_rlw_joint"
+    type="continuous">
+    <origin
+      xyz="0.211046138035326 0.225462516782742 -0.036436990471692"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="chassis_link" />
+    <child
+      link="chassis_rlw_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="chassis_fra_link">
+    <inertial>
+      <origin
+        xyz="2.66700217466109E-09 -0.00972237828907267 0.0159005866069173"
+        rpy="0 0 0" />
+      <mass
+        value="0.0549845947133073" />
+      <inertia
+        ixx="8.45119935272113E-06"
+        ixy="-1.25374857911798E-11"
+        ixz="-4.01915329504993E-11"
+        iyy="2.86081527035349E-06"
+        iyz="3.24289946483862E-10"
+        izz="7.04682890144697E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_fra_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_fra_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_fra_joint"
+    type="revolute">
+    <origin
+      xyz="0.83569 -0.19846 -0.052336"
+      rpy="0 0 0" />
+    <parent
+      link="chassis_link" />
+    <child
+      link="chassis_fra_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.2816"
+      upper="0.2816"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="chassis_frw_link">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 -2.54995033606171E-16 0.0153678361240784"
+        rpy="0 0 0" />
+      <mass
+        value="0.72439498421396" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="-7.48854848038652E-20"
+        ixz="-5.33610562376912E-18"
+        iyy="0.00100050040398938"
+        iyz="1.0603953265148E-18"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_frw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_frw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_frw_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0275000000000001 0.015901193015152"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="chassis_fra_link" />
+    <child
+      link="chassis_frw_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="chassis_fla_link">
+    <inertial>
+      <origin
+        xyz="2.66703281681657E-09 0.00972237828901668 0.0158994133929911"
+        rpy="0 0 0" />
+      <mass
+        value="0.0549845947133072" />
+      <inertia
+        ixx="8.45119935272112E-06"
+        ixy="1.25374857815876E-11"
+        ixz="4.01915329625832E-11"
+        iyy="2.86081527035348E-06"
+        iyz="3.24289946558189E-10"
+        izz="7.04682890144697E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_fla_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_fla_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_fla_joint"
+    type="revolute">
+    <origin
+      xyz="0.83569 0.19855 -0.052336"
+      rpy="0 0 0" />
+    <parent
+      link="chassis_link" />
+    <child
+      link="chassis_fla_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.2816"
+      upper="0.2816"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="chassis_flw_link">
+    <inertial>
+      <origin
+        xyz="3.44169137633799E-15 1.4888913245097E-14 -0.0153678361240687"
+        rpy="0 0 0" />
+      <mass
+        value="0.724394984213959" />
+      <inertia
+        ixx="0.00100050040398938"
+        ixy="-4.98378304296678E-22"
+        ixz="3.57769771308648E-18"
+        iyy="0.00100050040398938"
+        iyz="4.16927976191023E-19"
+        izz="0.00166753377285241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_flw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cyber_truck_trailer/meshes/chassis_flw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_flw_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.0275000000000002 0.0158988069848475"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="chassis_fla_link" />
+    <child
+      link="chassis_flw_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+
+  <gazebo>
+    <plugin name="car_gazebo_plugin" filename="libcar_gazebo_plugin.so">
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="lidar_link">
+    <sensor name="lidar" type="ray">
+      <pose>0.0 0.0 0.0 0 0 0</pose>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <update_rate>5</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1.00000</resolution>
+            <min_angle>0.000000</min_angle>
+            <max_angle>6.280000</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.120000</min>
+          <max>3.5</max>
+          <resolution>0.015000</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="scan" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <remapping>~/out:=scan</remapping>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>lidar_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>

@@ -1,0 +1,30 @@
+# version: "3.8"
+
+services:
+  ros2-galactic-enpm662:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ros2-galactic-enpm662
+    container_name: ros2-galactic-enpm662
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - ../:/ros2_ws/src  # Volume for persistent storage
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw  # X11 forwarding for GUI
+    devices:
+      - /dev/input/js0:/dev/input/js0  # Explicitly map the joystick device
+      - /dev/uinput:/dev/uinput  # Optional for more control
+      - /dev/snd:/dev/snd  # Allow access to sound devices
+    network_mode: host  # Share the host's network stack
+    pid: "host"  # Share the host's process ID namespace
+    privileged: true  # Full access to devices
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]  # Access to all GPUs
+    runtime: nvidia
+    stdin_open: true
+    tty: true
