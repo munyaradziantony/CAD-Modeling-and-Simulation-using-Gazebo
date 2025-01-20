@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.000615] (cyber_interfaces) JobQueued: {'identifier': 'cyber_interfaces', 'dependencies': OrderedDict()}
+[0.000675] (cyber_truck_trailer) JobQueued: {'identifier': 'cyber_truck_trailer', 'dependencies': OrderedDict()}
+[0.000690] (simple_controller) JobQueued: {'identifier': 'simple_controller', 'dependencies': OrderedDict()}
+[0.000703] (teleop_interface) JobQueued: {'identifier': 'teleop_interface', 'dependencies': OrderedDict()}
+[0.000714] (car_gazebo_plugin) JobQueued: {'identifier': 'car_gazebo_plugin', 'dependencies': OrderedDict([('cyber_interfaces', '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/install/cyber_interfaces')])}
+[0.000731] (cyber_interfaces) JobStarted: {'identifier': 'cyber_interfaces'}
+[0.005080] (cyber_truck_trailer) JobStarted: {'identifier': 'cyber_truck_trailer'}
+[0.006061] (simple_controller) JobStarted: {'identifier': 'simple_controller'}
+[0.008848] (teleop_interface) JobStarted: {'identifier': 'teleop_interface'}
+[0.012099] (cyber_interfaces) JobProgress: {'identifier': 'cyber_interfaces', 'progress': 'cmake'}
+[0.013096] (cyber_interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/cyber_trailer/cyber_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/install/cyber_interfaces'], 'cwd': '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/build/cyber_interfaces', 'env': OrderedDict([('USER', 'munyaantony'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/munyaantony'), ('OLDPWD', '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/cyber_trailer'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/munyaantony/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('MANAGERPID', '10989'), ('SYSTEMD_EXEC_PID', '11575'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15398'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'munyaantony'), ('JOURNAL_STREAM', '8:12884'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'munyaantony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/munyaantony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/munyaantony-Precision-7550:@/tmp/.ICE-unix/11326,unix/munyaantony-Precision-7550:/tmp/.ICE-unix/11326'), ('INVOCATION_ID', '656b5bcbaf114c3ca8312f36a01a0f70'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('TERMINATOR_UUID', 'urn:uuid:b7884d7d-37d7-4ce8-9128-1aceceb7f7db'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/build/cyber_interfaces'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('_P9K_TTY', '/dev/pts/0'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.017705] (cyber_truck_trailer) JobProgress: {'identifier': 'cyber_truck_trailer', 'progress': 'cmake'}
+[0.018052] (cyber_truck_trailer) Command: {'cmd': ['/usr/local/bin/cmake', '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/cyber_trailer/cyber_truck_trailer', '-DCMAKE_INSTALL_PREFIX=/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/install/cyber_truck_trailer'], 'cwd': '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/build/cyber_truck_trailer', 'env': OrderedDict([('USER', 'munyaantony'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/munyaantony'), ('OLDPWD', '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/cyber_trailer'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/munyaantony/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('MANAGERPID', '10989'), ('SYSTEMD_EXEC_PID', '11575'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15398'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'munyaantony'), ('JOURNAL_STREAM', '8:12884'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'munyaantony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/munyaantony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/munyaantony-Precision-7550:@/tmp/.ICE-unix/11326,unix/munyaantony-Precision-7550:/tmp/.ICE-unix/11326'), ('INVOCATION_ID', '656b5bcbaf114c3ca8312f36a01a0f70'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('TERMINATOR_UUID', 'urn:uuid:b7884d7d-37d7-4ce8-9128-1aceceb7f7db'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/build/cyber_truck_trailer'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('_P9K_TTY', '/dev/pts/0'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.099851] (-) TimerEvent: {}
+[0.200102] (-) TimerEvent: {}
+[0.300416] (-) TimerEvent: {}
+[0.400933] (-) TimerEvent: {}
+[0.501157] (-) TimerEvent: {}
+[0.601457] (-) TimerEvent: {}
+[0.702025] (-) TimerEvent: {}
+[0.802635] (-) TimerEvent: {}
+[0.871669] (cyber_truck_trailer) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.871864] (cyber_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.902716] (-) TimerEvent: {}
+[1.003043] (-) TimerEvent: {}
+[1.103864] (-) TimerEvent: {}
+[1.187028] (cyber_truck_trailer) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.193238] (cyber_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.203922] (-) TimerEvent: {}
+[1.209416] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.209605] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.304283] (-) TimerEvent: {}
+[1.361385] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.361512] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.368980] (cyber_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.369059] (cyber_truck_trailer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.404513] (-) TimerEvent: {}
+[1.411452] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.412126] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.413405] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.413783] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.439895] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.440575] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.504718] (-) TimerEvent: {}
+[1.605246] (-) TimerEvent: {}
+[1.623026] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.623178] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.631428] (cyber_truck_trailer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.631632] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.631971] (cyber_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.632138] (cyber_truck_trailer) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.632330] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.632676] (cyber_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.694552] (cyber_truck_trailer) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[1.694825] (cyber_truck_trailer) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.694967] (cyber_truck_trailer) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.695394] (cyber_truck_trailer) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[1.695696] (cyber_truck_trailer) StderrLine: {'line': b'\n'}
+[1.695863] (cyber_truck_trailer) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[1.695987] (cyber_truck_trailer) StderrLine: {'line': b'  any of the following names:\n'}
+[1.696100] (cyber_truck_trailer) StderrLine: {'line': b'\n'}
+[1.696225] (cyber_truck_trailer) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[1.696353] (cyber_truck_trailer) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[1.696461] (cyber_truck_trailer) StderrLine: {'line': b'\n'}
+[1.696568] (cyber_truck_trailer) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[1.696675] (cyber_truck_trailer) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[1.696782] (cyber_truck_trailer) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[1.696889] (cyber_truck_trailer) StderrLine: {'line': b'  has been installed.\n'}
+[1.696995] (cyber_truck_trailer) StderrLine: {'line': b'\n'}
+[1.697101] (cyber_truck_trailer) StderrLine: {'line': b'\x1b[0m\n'}
+[1.697216] (cyber_truck_trailer) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.697345] (cyber_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[1.697490] (cyber_interfaces) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.697602] (cyber_interfaces) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.697710] (cyber_interfaces) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[1.697816] (cyber_interfaces) StderrLine: {'line': b'\n'}
+[1.697971] (cyber_interfaces) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[1.698066] (cyber_interfaces) StderrLine: {'line': b'  any of the following names:\n'}
+[1.698156] (cyber_interfaces) StderrLine: {'line': b'\n'}
+[1.698538] (cyber_interfaces) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[1.699940] (cyber_interfaces) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[1.700124] (cyber_interfaces) StderrLine: {'line': b'\n'}
+[1.700802] (cyber_interfaces) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[1.701051] (cyber_interfaces) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[1.701497] (cyber_interfaces) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[1.702120] (cyber_interfaces) StderrLine: {'line': b'  has been installed.\n'}
+[1.702249] (cyber_interfaces) StderrLine: {'line': b'\n'}
+[1.702354] (cyber_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.702451] (cyber_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.702712] (cyber_interfaces) CommandEnded: {'returncode': 1}
+[1.703170] (cyber_truck_trailer) CommandEnded: {'returncode': 1}
+[1.705300] (-) TimerEvent: {}
+[1.721794] (cyber_interfaces) JobEnded: {'identifier': 'cyber_interfaces', 'rc': 1}
+[1.722264] (cyber_truck_trailer) JobEnded: {'identifier': 'cyber_truck_trailer', 'rc': 'SIGINT'}
+[1.805449] (-) TimerEvent: {}
+[1.896940] (simple_controller) JobEnded: {'identifier': 'simple_controller', 'rc': 'SIGINT'}
+[1.898493] (teleop_interface) JobEnded: {'identifier': 'teleop_interface', 'rc': 'SIGINT'}
+[1.905548] (-) TimerEvent: {}
+[1.910046] (car_gazebo_plugin) JobSkipped: {'identifier': 'car_gazebo_plugin'}
+[1.910297] (-) EventReactorShutdown: {}

@@ -1,0 +1,32 @@
+[0.014s] Invoking command in '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/build/cyber_truck_trailer': /usr/local/bin/cmake /home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/cyber_trailer/cyber_truck_trailer -DCMAKE_INSTALL_PREFIX=/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/install/cyber_truck_trailer
+[0.866s] -- The C compiler identification is GNU 11.4.0
+[1.182s] -- The CXX compiler identification is GNU 11.4.0
+[1.204s] -- Detecting C compiler ABI info
+[1.356s] -- Detecting C compiler ABI info - done
+[1.364s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.407s] -- Detecting C compile features
+[1.408s] -- Detecting C compile features - done
+[1.435s] -- Detecting CXX compiler ABI info
+[1.618s] -- Detecting CXX compiler ABI info - done
+[1.626s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.626s] -- Detecting CXX compile features
+[1.627s] -- Detecting CXX compile features - done
+[1.689s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[1.689s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[1.690s]   has asked CMake to find a package configuration file provided by
+[1.690s]   "ament_cmake", but CMake did not find one.
+[1.690s] 
+[1.690s]   Could not find a package configuration file provided by "ament_cmake" with
+[1.691s]   any of the following names:
+[1.691s] 
+[1.691s]     ament_cmakeConfig.cmake
+[1.691s]     ament_cmake-config.cmake
+[1.691s] 
+[1.691s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[1.691s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[1.691s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[1.691s]   has been installed.
+[1.692s] 
+[1.692s] [0m
+[1.692s] -- Configuring incomplete, errors occurred!
+[1.698s] Invoked command in '/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/build/cyber_truck_trailer' returned '1': /usr/local/bin/cmake /home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/cyber_trailer/cyber_truck_trailer -DCMAKE_INSTALL_PREFIX=/home/munyaantony/Desktop/Cyber-Truck-and-Trailer-Simulation-in-Gazebo/install/cyber_truck_trailer
